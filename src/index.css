@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand: #ff4d12;
+  --color-ink: #0a0a0a;
+  --color-paper: #ffffff;
+
+  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-body: "Inter Variable", system-ui, sans-serif;
+  --font-headline: "Archivo Variable", "Arial Black", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+/* Visible keyboard focus (accessibility requirement) */
+:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 3px;
+}
+
+/* Big grid lines every 20% of width (like the Figma frame) + faint fine grid */
+.bg-grid {
+  background-color: var(--color-paper);
+  background-image:
+    linear-gradient(to right, rgb(0 0 0 / 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(0 0 0 / 0.1) 1px, transparent 1px),
+    linear-gradient(to right, rgb(0 0 0 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(0 0 0 / 0.04) 1px, transparent 1px);
+  background-size: 20% 100%, 100% min(20vw, 288px), 24px 24px, 24px 24px;
+}
+
+/* Extra-wide, heaviest weight, matches the Figma headline */
+.headline-wide {
+  font-weight: 900;
+  font-stretch: 125%;
+}
