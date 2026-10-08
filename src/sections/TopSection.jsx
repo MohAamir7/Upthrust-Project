@@ -1,6 +1,6 @@
 import BrandBar from "../component/TopSectioncompo/BrandBar";
 import Scribble from "../component/TopSectioncompo/Scribble";
-import { Statue } from "../component/TopSectioncompo/Statue";
+import Statue from "../component/TopSectioncompo/Statue";
 import Top1 from "../assets/TopSectionSvg/Top1.svg";
 import Top2 from "../assets/TopSectionSvg/Top2.svg";
 import TopCorner1 from "../assets/BrandSVG/TopCorner.svg";
