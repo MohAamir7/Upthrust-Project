@@ -16,16 +16,17 @@
   }
 
   return (
-    <form className="upthrust-newsletter" onSubmit={handleSubmit}>
-      <label className="upthrust-newsletter-title" htmlFor="upthrust-email">
+    <form onSubmit={handleSubmit}>
+      <label className="mb-[14px] block text-sm" htmlFor="upthrust-email">
         Sign up for our emails
       </label>
 
-      <label className="upthrust-consent">
+      <label className="flex max-w-[370px] cursor-pointer items-start gap-2 text-[10px] leading-[1.35] text-[#c7c7c7]">
         <input
           type="checkbox"
           checked={consented}
           onChange={(event) => setConsented(event.target.checked)}
+          className="mt-px h-[10px] w-[10px] flex-none accent-[#ff3d08]"
         />
         <span>
           By checking this box sign up for our newsletter and receive marketing
@@ -33,7 +34,7 @@
         </span>
       </label>
 
-      <div className="upthrust-email-row">
+      <div className="mt-3 flex flex-col items-start gap-3">
         <input
           id="upthrust-email"
           type="email"
@@ -42,10 +43,16 @@
           onChange={(event) => setEmail(event.target.value)}
           required
           autoComplete="email"
+          className="w-full min-w-0 border-0 bg-transparent p-0 [font-family:inherit] text-sm text-[#f7f7f7] outline-none placeholder:text-[#777] placeholder:opacity-100"
         />
-        <button type="submit">Submit</button>
+        <button
+          type="submit"
+          className="cursor-pointer border-0 bg-transparent p-0 [font-family:inherit] text-sm text-[#f7f7f7] hover:text-[#ff3d08]"
+        >
+          Submit
+        </button>
       </div>
-      <p className="upthrust-form-status" aria-live="polite">{status}</p>
+      <p className="mt-2 min-h-3 text-[11px] text-[#777]" aria-live="polite">{status}</p>
     </form>
   );
 }

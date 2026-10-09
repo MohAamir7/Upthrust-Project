@@ -14,7 +14,7 @@ function App() {
 
           <TopSection />
           <Services />
-          {/* <Footer/> */}
+          <Footer/>
         </main>
       </div>
     </>
