@@ -43,3 +43,18 @@ body {
   font-weight: 900;
   font-stretch: 125%;
 }
+
+/* Grid overlay on the dark section (placeholder for Figma's warped mesh) */
+.bg-grid-dark {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.12) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* Cheap orange glow shown on phones and while the 3D loads */
+.ring-fallback {
+  background:
+    radial-gradient(70% 16% at 35% 22%, rgb(255 66 0 / 0.55), transparent 70%),
+    radial-gradient(32% 38% at 62% 58%, rgb(255 66 0 / 0.45), transparent 70%);
+}

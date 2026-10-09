@@ -25,7 +25,7 @@ export default function Statue() {
     <div
       role="img"
       aria-label="Iridescent classical bust"
-      className="relative mx-auto my-6 h-[420px] w-[80%] max-w-md lg:absolute lg:left-[31%] lg:top-[19%] lg:z-20 lg:m-0 lg:h-[50%] lg:w-[38%] lg:max-w-none"
+      className="relative mx-auto my-6 h-[420px] w-[80%] max-w-md lg:absolute lg:left-[31.04%] lg:top-[19.22%] lg:z-20 lg:m-0 lg:h-[min(76.1vh,685px)] lg:w-[35.92%] lg:max-w-none"
     >
       {/* Placeholder: fades out once the 3D model is ready.
           Later this becomes the pre-rendered statue image (best for LCP). */}

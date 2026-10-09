@@ -12,7 +12,7 @@ export const TopSection = () => {
     <section
       id="hero"
       aria-labelledby="hero-heading"
-      className="bg-grid relative mx-auto w-full max-w-[1440px] overflow-hidden pt-24 lg:aspect-[1440/1297] lg:pt-0"
+      className="bg-grid relative mx-auto w-full max-w-[1440px] overflow-hidden pt-24 lg:aspect-auto lg:h-screen lg:pt-0"
     >
       <h1
   id="hero-heading"
@@ -21,15 +21,15 @@ export const TopSection = () => {
   <img
     src={Top1}
     alt="Bold design"
-    className="block h-auto w-full lg:absolute lg:left-0 lg:top-[6.25%] lg:z-10 lg:w-[94.66%]"
+    className="block h-auto w-full lg:absolute lg:left-28 lg:top-[12.25%] lg:z-10 lg:w-[80.66%]"
   />
-  <span className="font-display block font-normal text-[14vw] lg:absolute lg:left-[56%] lg:top-[47.7%] lg:z-10 lg:-translate-y-1/2 lg:text-[9cqw]">
+  <span className="font-display block font-normal text-[14vw] lg:absolute lg:left-[56%] lg:top-[47.7%] lg:z-10 lg:-translate-y-1/2 lg:text-[7cqw]">
     that
   </span>
   <img
     src={Top2}
     alt="Performs"
-    className="block h-auto w-full lg:absolute lg:left-[10.76%] lg:top-[63.68%] lg:z-10 lg:w-[78.44%]"
+    className="block h-auto w-full lg:absolute lg:left-[18.76%] lg:top-[65.68%] lg:z-21 lg:w-[60.44%]"
   />
 </h1>
       <Statue />

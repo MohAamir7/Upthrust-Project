@@ -17,7 +17,7 @@ export default function BrandBar() {
   
 ];
   return (
-    <div className="mx-auto flex max-w-[1440px] items-center justify-between border-t border-black/20 px-6 py-5 lg:absolute lg:inset-x-0 lg:bottom-0 lg:h-36 lg:px-10 lg:py-10">
+    <div className="mx-auto flex max-w-[1440px] items-center justify-between border-t border-black/20 px-6 py-5 lg:absolute lg:inset-x-0 lg:bottom-0 lg:h-[11.1%] lg:px-10 lg:py-10">
       {LOGOS.map((logo) => (
         <img
           key={logo.id}
